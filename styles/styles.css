@@ -1,0 +1,91 @@
+@import 'reset.css';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+
+body {
+    background-color: #f7f7f7;
+    color: #f7f7f7;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-family: 'Open Sans';
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content form {
+    border: none;
+    border-bottom: 2px #f7f7f7 solid;
+    margin: 10px;
+}
+
+.content form input {
+    border: none;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 30px;
+    color: #f7f7f7;
+}
+.js-toDoList {
+    margin-top: 15px;
+}
+.js-toDoList li {
+    margin-bottom: 5px;
+}
+.content .js-clock .js-title {
+    font-size: 60px;
+}
+
+.content .js-greetings {
+    font-size: 30px;
+    margin: 10px;
+}
+.clicked {
+    color: #f7f7f7;
+}
+button {
+    margin-right: 5px;
+    border: none;
+    background-color: transparent;
+}
+span {
+    font-size: 20px;
+}
+.toDo-span {
+    font-size: 30px;
+    font-weight: 600;
+    color: #f7f7f7;
+    margin-top: 15px;
+    padding-left: 15px;
+}
+.form,
+.greetings {
+    display: none;
+}
+.showing {
+    display: block;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.bgImage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
+}
+::placeholder {
+    color: #f7f7f7;
+}
